@@ -1,2 +1,0 @@
-# projectTech
-project tech 
