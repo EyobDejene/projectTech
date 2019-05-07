@@ -1,0 +1,65 @@
+
+let skillSlider = document.querySelector("#skill");
+let skillOutput = document.querySelector(".skill");
+
+let ageSlider = document.querySelector("#age");
+let ageOutput = document.querySelector(".age");
+
+let distanceSlider = document.querySelector("#distance");
+let distanceOutput = document.querySelector(".distance");
+
+
+// Age filter
+let AgeFilterState = function(){
+    // slider values filter
+    let ownAge = ageSlider.getAttribute('data-ownAge');
+    ageOutput.innerHTML = ageSlider.value;
+    ageOutput.innerHTML = ownAge+" - "+ageSlider.value;
+    ageSlider.setAttribute("value", ageSlider.value);
+};
+
+
+// Distance filter
+let DistanceFilterState = function(){
+    // slider values filter
+    distanceOutput.innerHTML = distanceSlider.value+" km";
+    distanceSlider.setAttribute("value", distanceSlider.value);
+};
+
+
+// Skill
+let SkillFilterState = function(){
+    // slider values filter
+    let skillState = skillSlider.value;
+    skillOutput.innerHTML = skillSlider.value;
+
+    if(this.value == 1 || skillState == 1){
+        skillOutput.innerHTML = "Beginner";
+        skillSlider.setAttribute("value", skillOutput.value);
+    }else if(this.value == 2 || skillState == 2){
+        skillOutput.innerHTML = "Intermediate";
+        skillSlider.setAttribute("value", skillOutput.value);
+    }else if(this.value == 3 || skillState == 3){
+        skillOutput.innerHTML = "Advanced";
+        skillSlider.setAttribute("value", skillOutput.value);
+    }else if(this.value == 4 || skillState == 4){
+        skillOutput.innerHTML = "Expert";
+        skillSlider.setAttribute("value", skillOutput.value);
+    }
+    else {
+        skillOutput.innerHTML = this.value;
+        skillSlider.setAttribute("value", skillOutput.value);
+    }
+};
+
+// Run FilterState
+SkillFilterState();
+AgeFilterState();
+DistanceFilterState();
+// Update the current slider value
+skillSlider.oninput = SkillFilterState;
+ageSlider.oninput = AgeFilterState;
+distanceSlider.oninput = DistanceFilterState;
+
+
+
