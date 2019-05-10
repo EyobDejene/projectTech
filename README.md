@@ -2,6 +2,9 @@
 
 >is a dating app to meet runners.
 
+# Wiki
+Read [wiki](https://github.com/EyobDejene/projectTech/wiki) for the whole process 
+
 ## Built With
 
 * [Express](https://expressjs.com/) - Minimalist web framework for Node.js
