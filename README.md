@@ -1,9 +1,9 @@
-# InSync
+# Dating App Feature - Filtering
 
->is a dating app to meet runners.
+For this project i will work on a feature of an dating app
 
 # Wiki
-Read [wiki](https://github.com/EyobDejene/projectTech/wiki) for the whole process 
+Read [wiki](https://github.com/EyobDejene/projectTech/wiki) for the whole process of this feature 
 
 ## Built With
 
