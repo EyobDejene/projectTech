@@ -2,23 +2,23 @@
 
 @font-face {
   font-family: "ProximaNova-Black";
-  src: url(../fonts/FontsFree-Net-Proxima-Nova-Black.otf);
+  src: url("../fonts/FontsFree-Net-Proxima-Nova-Black.otf");
 }
 
 @font-face {
   font-family: "ProximaNova-Bold";
-  src: url(../fonts/FontsFree-Net-Proxima-Nova-Bold.otf);
+  src: url("../fonts/FontsFree-Net-Proxima-Nova-Bold.otf");
 }
 
 
 @font-face {
   font-family: "ProximaNova-Regular";
-  src: url(../fonts/ProximaNova-Regular.ttf);
+  src: url("../fonts/ProximaNova-Regular.ttf");
 }
 
 @font-face {
   font-family: "ProximaNova-Light";
-  src: url(../fonts/FontsFree-Net-Proxima-Nova-Light.otf);
+  src: url("../fonts/FontsFree-Net-Proxima-Nova-Light.otf");
 }
 
 
@@ -68,8 +68,11 @@ nav ul li a{
   position: relative;
   background-color: transparent;
   border-style: none;
-  background-image: url(/images/icons/filter.svg);
+  background-image: url("/images/icons/filter.svg");
 }
+
+
+
 
 .logo{
   width: 2.5rem;
@@ -244,7 +247,7 @@ main{
   content: "";
   width: 2rem;
   height: 2rem;
-  background: url(/images/icons/dislike.svg) no-repeat center;
+  background: url("/images/icons/dislike.svg") no-repeat center;
   display: inline-block;
   position: absolute;
   margin-left: -1rem;
@@ -256,7 +259,7 @@ main{
   content: "";
   width: 2rem;
   height: 2rem;
-  background: url(/images/icons/like.svg) no-repeat;
+  background: url("/images/icons/like.svg") no-repeat;
   display: inline-block;
   position: absolute;
   margin-left: -1rem;
@@ -276,11 +279,45 @@ main{
   background: #ffffff;
   margin-top: -50rem;
   z-index: 2;
-  opacity: 0;
   -webkit-transition: all 0.7s cubic-bezier(.10, .10, .25, .90);
   -moz-transition: all 0.7s cubic-bezier(.10, .10, .25, .90);
-
+  opacity: 0;
+  display: none;
 }
+
+
+
+#filters:not(:target) #filter{
+  display:none;
+}
+
+#filters:target #filter{
+  margin-top: 0rem!important;opacity: 1!important;
+  display: block;
+}
+
+#filters:target main
+{
+  display: none;
+}
+
+#filters:not(:target) .hide-filter{
+    display: none;
+}
+
+#filters:target .hide-filter{
+    display: block;
+}
+
+#filters:not(:target) .show-filter{
+    display: block;
+}
+
+#filters:target .show-filter{
+    display: none;
+}
+
+
 
  .open{
   margin-top: 0rem!important;

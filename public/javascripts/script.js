@@ -63,23 +63,23 @@ distanceSlider.oninput = DistanceFilterState;
 
 
 // open and close filter
-
-document.querySelector('.filter-button').onclick = function() {
-    let form = document.querySelector('#filter');
-    let main = document.querySelector('main');
-    let formIsOpen =  form.classList.contains('open');
-    filterState(form,formIsOpen,main);
-}
-
-function filterState (form,formIsOpen,main) {
-    if(!formIsOpen){
-        console.log(formIsOpen);
-        form.classList.add('open');
-        main.classList.add('not-visible');
-    }else{
-        console.log(formIsOpen);
-        form.classList.remove('open');
-        main.classList.remove('not-visible');
-    }
-
-}
+//
+// document.querySelector('.filter-button').onclick = function() {
+//     let form = document.querySelector('#filter');
+//     let main = document.querySelector('main');
+//     let formIsOpen =  form.classList.contains('open');
+//     filterState(form,formIsOpen,main);
+// }
+//
+// function filterState (form,formIsOpen,main) {
+//     if(!formIsOpen){
+//         console.log(formIsOpen);
+//         form.classList.add('open');
+//         main.classList.add('not-visible');
+//     }else{
+//         console.log(formIsOpen);
+//         form.classList.remove('open');
+//         main.classList.remove('not-visible');
+//     }
+//
+// }
