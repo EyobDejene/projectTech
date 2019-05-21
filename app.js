@@ -7,6 +7,10 @@ var logger = require('morgan');
 var hbs = require('express-handlebars');
 require('dotenv').config();
 
+// db connection
+var db = require('./models/db');
+
+// routes
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var overviewRouter = require('./routes/overview');

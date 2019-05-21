@@ -71,6 +71,20 @@ nav ul li a{
   background-image: url("/images/icons/filter.svg");
 }
 
+.filter-button-close{
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    background-color: transparent;
+    border-style: none;
+    text-decoration: none;
+    font-family: ProximaNova-Black;
+    color:#FFAA1A;
+    line-height: 2rem;
+    left: -0.5rem;
+}
+
+
 
 
 
@@ -602,7 +616,7 @@ label{
   height: 100%;
 }
 
-#matches article{
+#matches a{
   min-height: 15rem;
   width: 100%;
   background-color: #ffffff;
@@ -610,6 +624,7 @@ label{
   -moz-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.3);
   box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.3);
   border-radius: 0.5rem;
+  text-decoration: none;
 }
 
 #matches .img-holder
@@ -685,4 +700,9 @@ label{
 
 .not-visible{
   display: none;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE!important;
 }

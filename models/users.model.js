@@ -1,11 +1,4 @@
-let mongoose = require('mongoose');
-
-const server   = process.env.DB_SERVER;
-const username = process.env.DB_USERNAME;
-const password = process.env.DB_PASSWORD;
-const database = process.env.DB_DATABASE;
-
-mongoose.connect(`mongodb+srv://${username}:${password}@${server}/${database}?retryWrites=true`, { useNewUrlParser: true,useCreateIndex: true});
+var mongoose = require( 'mongoose' );
 
 let UsersSchema = new mongoose.Schema({
     name: String,
@@ -16,6 +9,6 @@ let UsersSchema = new mongoose.Schema({
     }
 });
 
+const User = mongoose.model('Users', UsersSchema);
 
-
-module.exports = mongoose.model('Users', UsersSchema);
+module.exports = User;

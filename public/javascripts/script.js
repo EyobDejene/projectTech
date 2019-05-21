@@ -32,23 +32,22 @@ let SkillFilterState = function(){
     // slider values filter
     let skillState = skillSlider.value;
     skillOutput.innerHTML = skillSlider.value;
-
     if(this.value == 1 || skillState == 1){
         skillOutput.innerHTML = "Beginner";
-        skillSlider.setAttribute("value", skillOutput.value);
+        skillSlider.setAttribute("value", skillState);
     }else if(this.value == 2 || skillState == 2){
         skillOutput.innerHTML = "Intermediate";
-        skillSlider.setAttribute("value", skillOutput.value);
+        skillSlider.setAttribute("value", skillState);
     }else if(this.value == 3 || skillState == 3){
         skillOutput.innerHTML = "Advanced";
-        skillSlider.setAttribute("value", skillOutput.value);
+        skillSlider.setAttribute("value", skillState);
     }else if(this.value == 4 || skillState == 4){
         skillOutput.innerHTML = "Expert";
-        skillSlider.setAttribute("value", skillOutput.value);
+        skillSlider.setAttribute("value", skillState);
     }
     else {
         skillOutput.innerHTML = this.value;
-        skillSlider.setAttribute("value", skillOutput.value);
+        skillSlider.setAttribute("value", skillState);
     }
 };
 
