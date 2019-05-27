@@ -1,6 +1,11 @@
 # InSync
 
->is a dating app to meet runners.
+<img src="https://oege.ie.hva.nl/~westere6/tech/app_icon2.png" alt="AppIcon" width="250px">
+
+
+>Dating app to meet runners.
+
+
 
 # Wiki
 Read [wiki](https://github.com/EyobDejene/projectTech/wiki) for the whole process 
