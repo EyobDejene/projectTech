@@ -9,7 +9,7 @@
         <!--<li><button  class="filter-button"></button></li>-->
         <li>
             <a href="#filters"  class="filter-button show-filter"></a>
-            <a href=""  class="filter-button-close hide-filter">Done</a>
+            <button type="submit" form="filter"  class="filter-button-close hide-filter">Done</button>
         </li>
         </ul>
     </nav>
@@ -17,7 +17,7 @@
 </header>
 
 
-<form id="filter" action="?" method="get">
+<form id="filter" action="/overview" method="get">
    <div class="formInner">
        <h1 id="page-title">Filter</h1>
        <span id="search-results">You have 6 matches</span>
@@ -29,9 +29,9 @@
     </div>
 
     <div class="option">
-        <h2>Age Range</h2>
+        <h2>Age Difference</h2>
         <span class="output age">20 - 25</span>
-        <input type="range" name="ageRange" min="20" max="26" value="23" class="slider" data-ownAge="20" id="age">
+        <input type="range" name="ageRange" min="0" max="20" value="3" class="slider" data-ownAge="20" id="age">
         <hr>
     </div>
 

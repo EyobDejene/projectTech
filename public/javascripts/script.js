@@ -12,9 +12,10 @@ let distanceOutput = document.querySelector(".distance");
 // Age filter
 let AgeFilterState = function(){
     // slider values filter
-    let ownAge = ageSlider.getAttribute('data-ownAge');
+    // let ownAge = ageSlider.getAttribute('data-ownAge');
     ageOutput.innerHTML = ageSlider.value;
-    ageOutput.innerHTML = ownAge+" - "+ageSlider.value;
+    // ageOutput.innerHTML = ownAge+" - "+ageSlider.value;
+    ageOutput.innerHTML = ageSlider.value+" years";
     ageSlider.setAttribute("value", ageSlider.value);
 };
 
