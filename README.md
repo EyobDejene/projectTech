@@ -18,6 +18,16 @@ Read [wiki](https://github.com/EyobDejene/projectTech/wiki) for the whole proces
 
 ## Installation
 
+Clone the repo
+```bash
+git clone [repoName]
+```
+
+After the cloning the repo
+```bash
+cd [directory]
+```
+
 With [npm](https://www.npmjs.com/) installed, run in the root directory
 ```bash
 npm install
