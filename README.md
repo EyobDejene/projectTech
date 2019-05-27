@@ -20,12 +20,12 @@ Read [wiki](https://github.com/EyobDejene/projectTech/wiki) for the whole proces
 
 Clone the repo
 ```bash
-git clone [repoName]
+git clone [projectTech]
 ```
 
 After the cloning the repo
 ```bash
-cd [directory]
+cd [projectTech]
 ```
 
 With [npm](https://www.npmjs.com/) installed, run in the root directory
