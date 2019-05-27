@@ -14,6 +14,7 @@ Read [wiki](https://github.com/EyobDejene/projectTech/wiki) for the whole proces
 
 * [Express](https://expressjs.com/) - Minimalist web framework for Node.js
 * [Handlebars](https://handlebarsjs.com/) - Template Engine
+* [MongoDB](https://mongodb.com/) - nosql DB
 
 ## Installation
 
