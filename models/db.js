@@ -11,6 +11,10 @@ const database = process.env.DB_DATABASE;
 
 var dbURI = `mongodb+srv://${username}:${password}@${server}/${database}?retryWrites=true`;
 
+
+// source :
+//https://theholmesoffice.com/mongoose-connection-best-practice/
+
 // Create the database connection
 mongoose.connect(dbURI, { useNewUrlParser: true,useCreateIndex: true});
 
@@ -41,3 +45,4 @@ process.on('SIGINT', function() {
 
 // BRING IN YOUR SCHEMAS & MODELS // For example
 require('./users.model');
+require('./overview.model');

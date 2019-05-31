@@ -8,7 +8,7 @@ var hbs = require('express-handlebars');
 require('dotenv').config();
 
 // db connection
-var db = require('./models/db');
+require('./models/db');
 
 // routes
 var indexRouter = require('./routes/index');
@@ -23,7 +23,7 @@ app.engine('hbs',hbs({extname:'hbs',defaultLayout:'layout',layoutsDir:__dirname 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

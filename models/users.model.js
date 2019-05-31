@@ -10,12 +10,7 @@ let UsersSchema = new mongoose.Schema({
     skill_level: Number,
     running_scheme: Number,
     practice_time: Array,
-    // email: {
-    //     type: String,
-    //     require: true,
-    //     unique: true
-    // }
-
+    match_date: { type: Date, default: Date.now },
 });
 
 // var UserModel = mongoose.model('User',UserSchema);
