@@ -4,7 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
-var hbs = require('express-handlebars');
+var express_ejs = require('express-ejs-layouts');
+var moment = require('moment');
+
 require('dotenv').config();
 
 // db connection
@@ -19,10 +21,13 @@ var overviewRouter = require('./routes/overview');
 var app = express();
 
 // view engine setup
-app.engine('hbs',hbs({extname:'hbs',defaultLayout:'layout',layoutsDir:__dirname + '/views/layouts/'}));
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+app.use(express_ejs);
 
+app.set('layout','layouts/layout');
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.locals.moment = moment;
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(express.json());

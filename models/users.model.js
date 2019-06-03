@@ -9,16 +9,11 @@ let UsersSchema = new mongoose.Schema({
     location: Number,
     skill_level: Number,
     running_scheme: Number,
-    practice_time: Array,
+    practice_time: Number,
     match_date: { type: Date, default: Date.now },
 });
 
-// var UserModel = mongoose.model('User',UserSchema);
-//
-// var id = "5ce3f88e999ecf8057cf893c";
-// UserModel.findById(id, function (err, user) {
-//     console.log("deleted");
-// } );
+
 const User = mongoose.model('Users', UsersSchema);
 
 
