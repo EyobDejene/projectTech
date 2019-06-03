@@ -1,11 +1,12 @@
 {
-  "name": "filter",
-  "version": "1.0.0",
-  "description": "filter dating app",
-  "main": "index.js",
+  "name": "dating-app",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node index.js",
-   "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "start-watch": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,22 @@
   "bugs": {
     "url": "https://github.com/EyobDejene/projectTech/issues"
   },
-  "homepage": "https://github.com/EyobDejene/projectTech#readme",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.1",
+    "express": "~4.16.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.16.1",
+    "http-errors": "~1.6.3",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.7",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "eslint": "^5.16.0",
+    "nodemon": "^1.19.0"
   }
-
 }
