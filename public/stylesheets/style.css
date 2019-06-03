@@ -143,7 +143,7 @@ main{
 }
 
 /* page title */
-#page-title{
+.page-title{
   margin: 0;
 }
 
@@ -190,37 +190,36 @@ main{
   left: 0;
   right: 0;
   margin: -1.5rem auto;
-}
-
-.name-plate h1
-{
   font-family: ProximaNova-Black;
   letter-spacing: 0.1rem;
   font-size: 1.2rem;
   color: #ffffff;
+  padding:1rem;
 }
+
+
 
 .location{
   display: block;
   padding-top: 2rem;
 }
 
-.location figure
+.location img
 {
   width: 1rem;
   height: 1rem;
   margin: 0;
   position: absolute;
   left: 0.5rem;
-  padding-top: 0.5rem;
 }
 
-.location h3
+.location
 {
-  font-family: ProximaNova-Light;
+  font-family: ProximaNova-Regular;
   font-size: 0.8rem;
   color: #000;
   padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .about{
@@ -653,10 +652,14 @@ label{
   /*left:10%;*/
   display: block;
   margin: -1.5rem auto;
-
+  font-family: ProximaNova-Black;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding:1rem;
 }
 
-#matches .small-name-plate h1
+#matches .small-name-plate
 {
   font-family: ProximaNova-Black;
   letter-spacing: 0.1rem;
@@ -689,7 +692,7 @@ label{
   margin-top: -0.2rem;
 }
 
-#search-results{
+.search-results{
   font-family: ProximaNova-Regular;
   display: block;
   font-size: 1rem;
@@ -699,7 +702,7 @@ label{
 }
 
 .not-visible{
-  display: none;
+  display: none!important;
 }
 
 input:focus {
