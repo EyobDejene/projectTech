@@ -29,13 +29,13 @@ overview.get('/', function(req, res, next) {
             date.setFullYear( date.getFullYear() + ageRange );
             return Math.abs(userAge.getFullYear() - date.getFullYear());
         }
-        // console.log("distange "+distance);
-        // console.log("age "+maxAge);
+        console.log("distance "+distance);
+        console.log("age "+maxAge);
 
 
         userList.find({
             skill_level : skillLevel,
-            age:  maxAge,
+            age:  maxAge ,
             location: {$gte : distance,  $lte :  distance},
             running_scheme: runningScheme,
             practice_time: practiceTime
@@ -48,8 +48,7 @@ overview.get('/', function(req, res, next) {
                     res.render('overview', {
                         title: 'Filter',
                         users: users,
-                        filter: true,
-                        url: req.query,
+                        filter: true
                     });
                 }
 
