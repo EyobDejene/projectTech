@@ -32,7 +32,8 @@
     "http-errors": "~1.6.3",
     "moment": "^2.24.0",
     "mongoose": "^5.5.7",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "dotenv": "^8.0.0"
   },
   "devDependencies": {
     "dotenv": "^8.0.0",
