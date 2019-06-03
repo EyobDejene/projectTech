@@ -35,7 +35,7 @@ overview.get('/', function(req, res, next) {
 
         userList.find({
             skill_level : skillLevel,
-            age:  maxAge,
+            age:  maxAge ,
             location: {$gte : distance,  $lte :  distance},
             running_scheme: runningScheme,
             practice_time: practiceTime
