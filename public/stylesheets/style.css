@@ -72,7 +72,7 @@ nav ul li a{
 }
 
 .filter-button-close{
-    width: 1.8rem;
+    width: auto;
     height: 1.8rem;
     position: relative;
     background-color: transparent;

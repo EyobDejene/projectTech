@@ -6,8 +6,6 @@ var overview = express.Router();
 overview.get('/', function(req, res, next) {
     // check if url contains keys
     if(Object.keys(req.query).length) {
-
-
         if(req.session.user) {
             var skillLevel = req.query.skilLevel;
             var ageRange = Number(req.query.ageRange);
@@ -52,7 +50,8 @@ overview.get('/', function(req, res, next) {
                         res.render('overview', {
                             title: 'Filter',
                             users: users,
-                            filter: true
+                            filter: true,
+                            session: req.session.user
                         });
                     }
                 })
