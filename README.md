@@ -3,13 +3,19 @@
 <img src="https://oege.ie.hva.nl/~westere6/tech/app_icon2.png" alt="AppIcon" width="250px">
 
 
->Dating app to meet equivalent runners.
->This feature focuses on filtering of your matches
+>Dating app to meet equivalent runners. <br/>
+>This feature focuses on filtering of your matches.
 
 # Live version
 https://datingapplication.herokuapp.com/
 
-To create a session and activate the filter visit login page.
+# Usage
+The filter button is by default not visible.<br/>
+To activate the filter you will need to visit the [login page](https://datingapplication.herokuapp.com/login) by pressing the (profile icon) this will 
+create a new session. <br/>
+After visiting the login page the filter icon will be visible on the [overview page](https://datingapplication.herokuapp.com/overview).
+ 
+
 
 
 # Wiki
