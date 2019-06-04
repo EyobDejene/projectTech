@@ -13,8 +13,12 @@ Read [wiki](https://github.com/EyobDejene/projectTech/wiki) for the whole proces
 ## Built With
 
 * [Express](https://expressjs.com/) - Minimalist web framework for Node.js
-* [Handlebars](https://handlebarsjs.com/) - Template Engine
-* [MongoDB](https://mongodb.com/) - nosql DB
+* [Express-session](https://www.npmjs.com/package/express-session) - Create a sessions
+* [EJS](https://ejs.co/) - Template Engine
+* [Moment](https://momentjs.com/) - Parse, validate, manipulate in JavaScript
+* [MongoDB](https://mongodb.com/) - Nosql DB
+* [Mongoose](https://mongoosejs.com/) - Mongodb object modeling
+* [Eslint](https://eslint.org/) - Linting utility for JavaScript
 
 ## Installation
 
@@ -39,6 +43,18 @@ Start the server
 npm start 
 ```
 The application runs at 127.0.0.1 on port 3000
+
+
+## Debug
+Start the server with nodemon
+```bash
+npm run start-watch
+```
+
+Linting checks
+```bash
+npm run lint
+```
 
 
 
