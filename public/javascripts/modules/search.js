@@ -30,8 +30,9 @@ const filter = function () {
         .then(json)
         .then(data => {
            // console.log('Request succeeded with JSON response', data)
-                console.log(data.length);
-                document.querySelector('.results-count').innerHTML = data.length;
+            return data;
+           //      console.log(data.length);
+           //      document.querySelector('.results-count').innerHTML = data.length;
         })
         .catch(error => {
             console.log('Request failed', error)
