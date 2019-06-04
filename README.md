@@ -14,6 +14,7 @@ Read [wiki](https://github.com/EyobDejene/projectTech/wiki) for the whole proces
 
 * [Express](https://expressjs.com/) - Minimalist web framework for Node.js
 * [Express-session](https://www.npmjs.com/package/express-session) - Create a sessions
+* [Nodemon](https://nodemon.io/) - Restart automatically your server
 * [EJS](https://ejs.co/) - Template Engine
 * [Moment](https://momentjs.com/) - Parse, validate, manipulate in JavaScript
 * [MongoDB](https://mongodb.com/) - Nosql DB
