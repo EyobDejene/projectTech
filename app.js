@@ -17,6 +17,7 @@ require('./models/db');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var overviewRouter = require('./routes/overview');
+var loginRouter = require('./routes/login');
 
 
 var app = express();
@@ -40,6 +41,7 @@ app.use(expressSession({secret:process.env.SESSION_SECRECT,saveUninitialized:tru
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/overview', overviewRouter);
+app.use('/login', loginRouter);
 
 
 // catch 404 and forward to error handler
