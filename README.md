@@ -1,10 +1,15 @@
-# InSync
+# InSync 
 
 <img src="https://oege.ie.hva.nl/~westere6/tech/app_icon2.png" alt="AppIcon" width="250px">
 
 
 >Dating app to meet equivalent runners.
+>This feature focuses on filtering of your matches
 
+# Live version
+https://datingapplication.herokuapp.com/
+
+To create a session and activate the filter visit login page.
 
 
 # Wiki
