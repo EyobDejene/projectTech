@@ -7,9 +7,12 @@
         <li><a href="/" class="profile-button"><img src="/images/icons/left-arrow.svg" alt="back"></a></li>
         <li><a href="/" class="logo"><img src="/images/icons/logo.svg" alt="logo"></a></li>
         <!--<li><button  class="filter-button"></button></li>-->
+
         <li>
+            <% if (session) { %>
             <a href="#filters"  class="filter-button show-filter"></a>
             <button type="submit" form="filter"  class="filter-button-close hide-filter">Done</button>
+           <% } %>
         </li>
         </ul>
     </nav>

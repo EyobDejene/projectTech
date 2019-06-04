@@ -73,7 +73,8 @@ overview.get('/', function(req, res, next) {
                 res.render('overview', {
                     title: 'Matches',
                     users: users,
-                    filter: false
+                    filter: false,
+                    session: req.session.user
                 });
             })
             .catch(err => {
