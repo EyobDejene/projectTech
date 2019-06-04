@@ -42,14 +42,16 @@ overview.get('/', function(req, res, next) {
         }).select('first_name age avatar location match_date')
             .exec()
             .then(function (users) {
-                if(req.xhr) {
-                    res.json(users);
+                if(req.session) {
+                    if (req.xhr) {
+                        res.json(users);
+                    } else {
+                        res.render('error', {
+                            message: 'No session has been found',
+                        });
+                    }
                 }else{
-                    res.render('overview', {
-                        title: 'Filter',
-                        users: users,
-                        filter: true
-                    });
+
                 }
 
             })
