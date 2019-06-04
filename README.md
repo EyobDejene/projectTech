@@ -57,6 +57,9 @@ Linting checks
 npm run lint
 ```
 
+## Notice
+This application will only run when you got the .env file.
+Contact me and i will send it. 
 
 
 
