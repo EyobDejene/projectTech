@@ -50,7 +50,8 @@ overview.get('/', function(req, res, next) {
                         res.render('overview', {
                             title: 'Filter',
                             users: users,
-                            filter: true
+                            filter: true,
+                            session: req.session.user
                         });
                     }
                 })
